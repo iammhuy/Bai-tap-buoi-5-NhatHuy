@@ -1,18 +1,15 @@
-<<<<<<< HEAD
-# Sử dụng image Tomcat chính thức
-=======
-# Sử dụng Tomcat 10 + JDK 17
->>>>>>> 352ce75 (update)
 FROM tomcat:9.0-jdk17
 
-# Xóa các app mặc định của Tomcat
-RUN rm -rf /usr/local/tomcat/webapps/*
+# Xóa ứng dụng mặc định của Tomcat (ROOT cũ)
+RUN rm -rf /usr/local/tomcat/webapps/ROOT
 
-# Copy file WAR đã build vào Tomcat
-COPY dist/*.war /usr/local/tomcat/webapps/ROOT.war
+# Copy file WAR của bạn vào Tomcat
+# Giả sử NetBeans export file thành: dist/Buoi_4.war
+COPY dist/Buoi_5.war /usr/local/tomcat/webapps/ROOT.war
 
-# Expose port 8080
+# Expose cổng 8080 (Tomcat chạy ở đây)
 EXPOSE 8080
 
-# Chạy Tomcat
+# Khởi động Tomcat
 CMD ["catalina.sh", "run"]
+
