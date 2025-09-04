@@ -1,5 +1,5 @@
 # Sử dụng image Tomcat chính thức
-FROM tomcat:9.0-jdk17-temurin
+FROM tomcat:9.0-jdk17
 
 # Xóa ứng dụng mặc định của Tomcat (ROOT cũ)
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
