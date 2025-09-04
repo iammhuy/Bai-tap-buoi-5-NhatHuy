@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar {
+    background-color: #2c5f77;
+    height: 10px;
+}
+.brand {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.brand img {
+    max-width: 120px;
+}
+h1 {
+    color: #008080; /* Teal color for headers */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border: 2px solid #008080; /* Framed border with teal color */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 10px 10px 10px 0;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="submit"] {
+    background-color: #008080; /* Teal color for submit button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto; /* Center the submit button */
+}
+
+input[type="submit"]:hover {
+    background-color: #006666;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 25px;
+    border: 2px solid #008080; /* Framed border with teal color */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the container */
+}
+.footer-text {
+    text-align: center;
+    color: #555; /* nếu muốn đổi màu */
+    margin-top: 20px;
+}
